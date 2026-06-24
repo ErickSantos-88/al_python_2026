@@ -1,0 +1,12 @@
+# Solicitando as 3 estaturas ao usuário
+estatura1 = float(input("Digite a primeira estatura (ex: 1.75): "))
+estatura2 = float(input("Digite a segunda estatura: "))
+estatura3 = float(input("Digite a terceira estatura: "))
+
+# Verificando se existem estaturas iguais
+if estatura1 == estatura2 or estatura1 == estatura3 or estatura2 == estatura3:
+    print("Há, pelo menos, 2 pessoas com a mesma estatura")
+else:
+    # Se todas forem diferentes, encontra a maior
+    maior_estatura = max(estatura1, estatura2, estatura3)
+    print(f"A maior estatura é: {maior_estatura}")
