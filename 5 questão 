@@ -1,0 +1,12 @@
+# Solicita ao usuário o sobrenome de um dos apresentadores
+sobrenome = input("Informe o sobrenome de um dos apresentadores: ").strip().upper()
+
+# Verifica a qual telejornal o apresentador pertence
+if sobrenome == "PINHEIRO" or sobrenome == "ARAÚJO" or sobrenome == "ARAUJO":
+    print("Bom Dia Nação")
+
+elif sobrenome == "BONNER" or sobrenome == "VASCONCELOS":
+    print("Jornal Brasileiro")
+
+else:
+    print("Apresentador(a) desconhecido(a).")
