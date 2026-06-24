@@ -1,0 +1,10 @@
+# Recebendo os dados do usuário
+idade = int(input("Digite a idade da pessoa: "))
+# O .strip().lower() serve para tirar espaços extras e aceitar "Sim", "SIM" ou "sim"
+possui_habilitacao = input("A pessoa possui habilitação? (sim/nao): ").strip().lower()
+
+# Verificando as condições para dirigir
+if idade >= 18 and possui_habilitacao == "sim":
+    print("Pode dirigir")
+else:
+    print("Não pode dirigir")
